@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="nav">
+        <div class="flex-start home home-home">
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i><a href="#">Home</a>
+        </div>
+        <div class="flex-start about-me home-about-me">
+            <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
+            <a href="about.html">About Me</a>
+        </div>
+        <div class="flex-start portfolio home-portfolio">
+            <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="flex-start contact home-contact">
+            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+	<div id="vertical-line"></div>
+	<main id="home">
+        <header class="flex">
+            <div class="header-div">
+                <h1>Home</h1>
+                <hr id="hr-1">
+                <hr id="hr-2">
+            </div>
+            <div>
+                <img id="theme-img" onclick="themeOpen()" src="../assets/settings-removebg-preview (3).png" alt="theme-img" title="Theme"/>
+                <i class="fa fa-times fa-2x" id="theme-img" onclick="themeClose()" aria-hidden="true"></i>
+                <div class="theme-div">
+                    <div class="color-selecion one"></div>
+                    <div class="color-selecion two"></div>
+                    <div class="color-selecion three"></div>
+                    <div class="color-selecion four"></div>
+                </div>
+            </div>
+                
+        </header>
+
+        <section class="flex section-flex">
+            <article>
+                <div id="hi">
+                    <h2>Hi, my name is <span>Ibrahim</span></h2>
+                    <p>Fullstack web developer</p>
+                </div>
+                <div>
+                    <p id="p-about-self">
+                        As a Fullstack web developer, I specialize in creating
+                        dynamic and responsive web applications using the powerful
+                        combination of Reactjs, Nodejs, Expressjs and MongoDB. With a strong foundation
+                        in these technologies, I am passionate about creating seamless user experience
+                        and leveraging the full potential of the fullstack to build
+                        robust and scalable web solutions. 
+                    </p>
+                </div>
+                <div id="button-container">
+                    <a class="button" href="#">More About Me</a>
+                    <a class="button" href="#">Download CV</a>
+                </div>
+                <div id="social-media-handles">
+                    <a href="https://web.facebook.com/oyesola.ibrahim.3/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>                    </a>
+                    <a href="#"><img id="twitter-img" src="../assets/twitter.png" alt="twitter-logo"/></a>
+                    <a href="https://wa.me/qr/6AOTB44USRA4O1"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </article>
+            <img id="profile-img" src="../assets/profilep.jpg" alt="my-logo"/>
+        </section>
+	</main>
+    <div id="horizontal-line"></div> 
+    <nav class="nav2">
+        <div class="home-home column">
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i><a href="index.html">Home</a>
+        </div>
+        <div class="home-about-me column">
+            <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
+            <a href="about.html">About Me</a>
+        </div>
+        <div class="home-portfolio column">
+            <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="home-contact column">
+            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

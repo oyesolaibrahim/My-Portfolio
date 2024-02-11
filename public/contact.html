@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="">
+	<nav class="nav">
+        <div class="flex-start home home-home">
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i><a href="index.html">Home</a>
+        </div>
+        <div class="flex-start about-me home-about-me">
+            <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
+            <a href="about.html">About Me</a>
+        </div>
+        <div class="flex-start portfolio home-portfolio">
+            <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="flex-start contact home-contact">
+            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+	<div id="vertical-line"></div>
+	<main id="about-me-main">
+        <header class="flex">
+            <div class="header-div">
+                <h1>Contact</h1>
+                <hr id="hr-1">
+                <hr id="hr-2">
+            </div>
+            <div>
+                <img id="theme-img" onclick="themeOpen()" src="../assets/settings-removebg-preview (3).png" alt="theme-img" title="Theme"/>
+                <i class="fa fa-times fa-2x" id="theme-img" onclick="themeClose()" aria-hidden="true"></i>
+                <div class="theme-div">
+                    <div class="color-selecion one"></div>
+                    <div class="color-selecion two"></div>
+                    <div class="color-selecion three"></div>
+                    <div class="color-selecion four"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="">
+            <div class="center">
+                <h3>Have you any question?</h3>
+                <p>I am at your service</p>
+            </div>
+
+            <div class="flex">
+                <div class="flex flex-contact">
+                    <i class="fa fa-phone fa-5x" aria-hidden="true"></i>
+                    <div class="flex flex-contact">
+                        <h3>Call me on</h3>
+                        <p>+2348168085157, +2347049509803</p>
+                    </div>
+            </div>
+                <div class="flex flex-contact">
+                    <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+                  <div class="flex flex-contact">
+                        <h3>Address</h3>
+                        <p>Ibadan, Nigeria</p>
+                    </div>
+                </div>
+                <div class="flex flex-contact">
+                    <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                    <div class="flex flex-contact">
+                        <h3>Email Me</h3>
+                        <p>oyesolaibrahim14@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <diV class="center">
+                    <h3>Send me an Email</h3>
+                    <p>I am very responsive to messages</p>
+                </diV>
+                <div>
+                    <form id="form">
+                    <div class="flex">
+                      <div class="label">
+                            <label for="name">
+                            </label>
+                             <input type="text" name="Name" id="input1" placeholder="Name"/>
+                        </div>
+                         <div class="label">
+                            <label for="email">
+                            </label>
+                            <input type="email" name="Email" id="input2" placeholder="Email">
+                        </div>
+                    </div>
+                        <div class="label">
+                            <label for="subject">
+                            </label>
+                            <input type="text" name="Subject" id="" placeholder="Subject">
+                        </div>
+                        <div class="label">
+                            <label for="message">
+                            </label>
+                            <input type="text" name="Message" id="message" placeholder="Message">
+                        </div>
+                        <button class="send" id="submit" type="submit">Send</button>
+                    </form>
+                    <span id="msgDelivered" class="center"></span>
+                </div>
+            </div>
+            
+        </section>
+	</main>
+    <div id="horizontal-line"></div> 
+    <nav class="nav2">
+        <div class="home-home column">
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i><a href="index.html">Home</a>
+        </div>
+        <div class="home-about-me column">
+            <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
+            <a href="about.html">About Me</a>
+        </div>
+        <div class="home-portfolio column">
+            <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="home-contact column">
+            <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav> 
+    <script src="script.js"></script>
+</body>
+</html>

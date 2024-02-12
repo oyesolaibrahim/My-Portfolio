@@ -620,7 +620,7 @@ div.center {
   
   .nav2 div {
     margin: 20px 5px;
-    padding: 20px 10px;
+    padding: 20px 5px;
   }
   #html-level, #css-level, #tailwind-level, #react-level, #express-level {
     width: 300px;
@@ -676,7 +676,7 @@ div.center {
   .nav2 div {
     margin: 10px 2px;
     background-color:rgb(255, 100, 50);
-    padding: 10px 5px;
+    padding: 10px 3px;
     border-radius: 10px;
   }
   #social-media-handles {
@@ -753,5 +753,16 @@ div.center {
   }
   .flex-contact {
     padding: 0px;
+  }
+}
+@media screen and (max-width:270px) {
+  #home {
+    height: 160vh;
+  }
+}
+
+@media screen and (max-width:222px) {
+  #home {
+    height: 170vh;
   }
 }

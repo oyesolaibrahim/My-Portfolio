@@ -647,6 +647,9 @@ div.center {
   #button-container * {
     margin: 10px auto;
   }
+  #home {
+    height: 160vh;
+  }
   #social-media-handles {
     position: absolute;
     margin-left: 10%;

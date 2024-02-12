@@ -649,7 +649,10 @@ div.center {
   }
   #social-media-handles {
     position: absolute;
-    margin-bottom: 0px;
+    margin-left: 10%;
+  }
+  #social-media-handles * {
+    font-size: 2rem;
   }
   #twitter-img {
     width: 15%;

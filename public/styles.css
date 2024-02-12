@@ -595,7 +595,7 @@ div.center {
     width: 15%;
   }
 }
-@media screen and (max-width:325px) {
+@media screen and (max-width:345px) {
  main {
   padding: 10px;
  }
@@ -654,6 +654,7 @@ div.center {
   .details {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
   }
   .column2 {
     flex-direction: column;

@@ -36,8 +36,10 @@ function themeOpen() {
 	const colorSelecionTwo = document.querySelector(".two");
 	const colorSelecionThree = document.querySelector(".three");
 	const colorSelecionFour = document.querySelector(".four");
+	const windowSize = window.innerWidth;
+
     themeDiv.style.right = "10px";
-    themeDiv.style.width = "50%";
+    themeDiv.style.width = "10%";
     themeDiv.style.padding = "10px";
     themeDiv.style.height = "10vh";
     theme.style.display = "none";
@@ -46,6 +48,11 @@ function themeOpen() {
     colorSelecionTwo.style.width = "30%";
     colorSelecionThree.style.width = "30%";
     colorSelecionFour.style.width = "30%";
+    if (windowSize <= 545) {
+        themeDiv.style.width = "50%"
+    } else {
+        themeDiv.style.width = "10%"
+    }
 }
 
 function themeClose() {

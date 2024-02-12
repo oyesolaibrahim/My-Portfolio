@@ -489,6 +489,9 @@ div.center {
   display: none;
 }
 
+.nav2 div:hover, .home-home {
+  background-color: #ff3800;
+}
 @media screen and (max-width:1200px) {
  
 .theme-div {
@@ -500,6 +503,7 @@ div.center {
   }
   #profile-img {
     margin: 50px auto; 
+    width: 40%;
   }
   #p-about-self {
     max-width: 1400px;
@@ -536,8 +540,9 @@ div.center {
     position: absolute;
     top: 100%;
     width: 100%;
-    padding-top: 41px;
+    /*padding-top: 41px;
     padding-bottom: 30px;
+*/
   }
   .nav2 div {
     margin: 20px 20px;
@@ -545,11 +550,51 @@ div.center {
     padding: 20px 30px;
     border-radius: 10px;
   }
+  .nav2 div.home-home {
+    background-color: #ff3800;
+  }
   .nav2 div a {
     color: white;
   }
   .about-flex {
     flex-direction: column;
+  }
+  .about-flex div div {
+    justify-content: flex-start;
+  }
+  /*#ul-1, #ul-2 {
+    padding: 2px;
+  }*/
+  #ul-1 *, #ul-2 * {
+  margin: 10px 3px;
+  }
+  .flex-ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .column2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #html-level, #css-level, #tailwind-level, #react-level, #express-level {
+    width: 450px;
+  }
+   #technologies {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+  #ul-2 {
+    margin: 10px auto;
+  }
+  #ul-1 {
+    margin-right:   100px;
   } 
 }
 @media screen and (max-width:625px) {
@@ -576,6 +621,12 @@ div.center {
   }
   .theme-div {
     width: 25%;
+  }
+  .call-me {
+    flex-direction: column;
+  }
+  .flex-contact {
+    margin: 20px auto;
   }
 }
 @media screen and (max-width:405px) {

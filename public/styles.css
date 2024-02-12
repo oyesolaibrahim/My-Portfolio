@@ -602,6 +602,12 @@ div.center {
 .theme-div {
   width: 25%;
 }
+.nav2 div {
+  margin: 10px 2px;
+  background-color:rgb(255, 100, 50);
+  padding: 10px 5px;
+  border-radius: 10px;
+}
 #theme-img {
   width: 7%;
 }
@@ -615,6 +621,9 @@ div.center {
   .nav2 div {
     margin: 20px 5px;
     padding: 20px 10px;
+  }
+  #html-level, #css-level, #tailwind-level, #react-level, #express-level {
+    width: 300px;
   }
   #twitter-img {
     width: 15%;

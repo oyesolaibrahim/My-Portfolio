@@ -132,19 +132,23 @@ i.fa-times {
   cursor: pointer;
 }
 .color-selecion {
-  border: 1px solid rgba(255, 0, 0, 0.5);
+  border: 1px solid #ff3800;
   border-radius: 50%;
   width: 0%;
 }
  .one {
-   background-color: rgba(255, 0, 0, 0.5);
+   background-color:#ff3800;
+   color: #ca9e1a;
 }
  .two {
-   background-color: cyan;
+   background-color:  #83580b;
 }
 
  .three {
-   background-color: rgba(255, 0, 0, 0.5);
+   background-color: cyan;
+}
+.four {
+  background-color: #552e5a;
 }
 h1 {
   font-weight: 900;
@@ -282,7 +286,6 @@ header {
   animation: 2s ease 0s 1 slideInLeft2;
 }
 #social-media-handles {
-  position: absolute;
   margin-top: 20px;
 }
 #social-media-handles * {
@@ -489,7 +492,7 @@ div.center {
   display: none;
 }
 
-.nav2 div:hover, .home-home {
+.nav2 div:hover, .nav2 div.home-home {
   background-color: #ff3800;
 }
 @media screen and (max-width:1200px) {
@@ -647,11 +650,7 @@ div.center {
   #button-container * {
     margin: 10px auto;
   }
-  #home {
-    height: 160vh;
-  }
   #social-media-handles {
-    position: absolute;
     margin-left: 10%;
   }
   #social-media-handles * {
@@ -761,7 +760,7 @@ div.center {
     padding: 0px;
   }
 }
-@media screen and (max-width:270px) {
+@media screen and (max-width:300px) {
   #home {
     height: 160vh;
   }
@@ -770,5 +769,11 @@ div.center {
 @media screen and (max-width:222px) {
   #home {
     height: 170vh;
+  }
+}
+@media screen and (max-height:300px) {
+  
+  #home {
+    height: 200vh;
   }
 }

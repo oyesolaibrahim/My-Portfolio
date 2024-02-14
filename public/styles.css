@@ -92,7 +92,7 @@ main {
   top : 0px;
   left: 9%;
   right: 0%;
-  padding: 50px;
+  padding: 49px;
 }
 a, li {
   list-style-type: none;
@@ -185,8 +185,8 @@ margin: 10px 0px;
   font-size: 1.4rem;
   font-weight: bold;
 }
- span, .msgDelivered {
-  color: #00C7FF;
+ span {
+  color: #155263;
  }
 section {
   margin-top: 50px;
@@ -212,7 +212,7 @@ section {
   margin: 64px 0px;
 }
 .button {
-  background-color: #00C7FF;
+  background-color: #155263;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -225,10 +225,8 @@ section {
   height: 100vh;
 }
 .home-home { 
-  animation: 2s ease-out 0s 1 slideInLeft3;
- 
+  animation: 2s ease-out 0s 1 slideInLeft3;  
 }
-
 .home-about-me {
    animation: 2s ease-out 0.5s 1 slideInLeft3;
 }
@@ -286,7 +284,7 @@ header {
   animation: 2s ease 0s 1 slideInLeft2;
 }
 #social-media-handles {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 #social-media-handles * {
   margin-right: 5px;
@@ -296,15 +294,6 @@ header {
   animation: 10s ease-out 0s 1 slideInUpward;
 }
 #social-media-handles *:hover {
-transform: translateY(10px);
-}
-#twitter-img {
-  width: 12%;
-  cursor: pointer;
-  transition: all 1s;
-  animation: 10s ease-out 0s 1 slideInUpward;
-}
-#twitter-img:hover {
 transform: translateY(10px);
 }
 @keyframes slideInUpward {
@@ -375,6 +364,9 @@ h1 {
 #click-here {
   color: white;
 }
+#technologies {
+  margin: auto 30px;
+}
 #technologies *{
   margin: 10px 0px;
 }
@@ -393,7 +385,7 @@ h1 {
   border: 1px solid #ff3800;
   border-radius: 7px;
   height: 7px;
-  background-color: #00C7FF;
+  background-color: #155263;
   position: absolute;
   top: -10px;
 }
@@ -434,7 +426,7 @@ article.portfolio:hover img {
 .center h3 {
   font-size: 2rem;
   margin: 10px 0px;
-  color: #00C7FF;
+  color: #155263;
 }
 form {
   width: 100%;
@@ -459,6 +451,9 @@ div.center {
 .start * {
   margin: 10px;
 }
+.fa-5x {
+  color: #155263;
+}
 .label input {
   width: 100%;
   margin: 10px 0px;
@@ -478,10 +473,10 @@ div.center {
 }
 .send {
   padding: 10px 20px;
-  background-color: #00C7FF;
+  background-color: #155263;
   color: white;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 20px;
@@ -495,6 +490,9 @@ div.center {
 .nav2 div:hover, .nav2 div.home-home {
   background-color: #ff3800;
 }
+ #msgDelivered {
+  color: white;
+ }
 @media screen and (max-width:1200px) {
  
 .theme-div {
@@ -549,7 +547,8 @@ div.center {
   }
   .nav2 div {
     margin: 20px 20px;
-    background-color:rgb(255, 100, 50);
+   /* background-color:rgb(255, 100, 50);
+    */background-color:rgb(255, 100, 50);
     padding: 20px 30px;
     border-radius: 10px;
   }
@@ -642,6 +641,7 @@ div.center {
   }
 }
 @media screen and (max-width:405px) {
+ 
   #button-container {
     margin: 30px auto;
     display: flex;

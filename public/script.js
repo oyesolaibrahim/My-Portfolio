@@ -49,10 +49,12 @@ function themeOpen() {
     colorSelecionTwo.style.width = "30%";
     colorSelecionThree.style.width = "30%";
     colorSelecionFour.style.width = "30%";
-    if (windowSize <= 545 || windowHeight <= 500) {
-        themeDiv.style.width = "50%"
-    } else {
-        themeDiv.style.width = "10%"
+    if (windowSize <= 600 || windowHeight <= 500) {
+        themeDiv.style.width = "30%";
+    } else if (windowSize <= 545 || windowHeight <= 500) {
+      themeDiv.style.width = "50%";
+    }else {
+        themeDiv.style.width = "20%"
     }
 }
 
@@ -74,172 +76,159 @@ function themeClose() {
     colorSelecionTwo.style.width = "0";
     colorSelecionThree.style.width = "0";
     colorSelecionFour.style.width = "0";
-}
-
+}  
 function themeRed() {
-    const nav = document.querySelector(".nav");
-    const nav2 = document.querySelector(".nav2");
-	const main = document.querySelector("main");
-	const body = document.querySelector("body");
-	const verticalLine = document.querySelector("#vertical-line");
-	const hr1 = document.querySelector("#hr-1");
-	const hr2 = document.querySelector("#hr-2");
-	const span = document.querySelector("span");
-	const msgDelivered = document.querySelector(".msgDelivered");
-	const button = document.querySelectorAll("button");
-	const send = document.querySelector(".send");
-	
+  
+  const nav = document.querySelector(".nav");
+  const nav2 = document.querySelector(".nav2");
+const main = document.querySelector("main");
+const span = document.querySelector("span");
+const buttons = document.querySelectorAll(".button");
+const send = document.querySelector(".send");
+const technologies = document.querySelectorAll("#html-level, #css-level, #react-level, #express-level, #tailwind-level");
+const technologyPercentages = document.querySelectorAll("#html-percentage, #css-percentage, #react-percentage, #express-percentage, #tailwind-percentage");
+const navHover = document.querySelectorAll(".nav2 div.home-home");
+  const themeDivs = document.querySelectorAll(".home-column");
+const h3s = document.querySelectorAll(".center h3");
+const labels = document.querySelectorAll(".label input");
+const contactIcon = document.querySelectorAll(".fa-5x");
+
     nav.style.backgroundColor = "rgba(255, 56, 0, 0.7)";
     nav2.style.backgroundColor = "rgba(255, 56, 0, 0.7)";
     main.style.backgroundColor = "#ff3800";
-    span.style.color = "#ff3800";
-    button.style.backgroundColor = "#ff3800";
-    msgDelivered.style.color = "#ff3800";
-    send.style.color = "#ff3800";
-}
+    span.style.color = "#155263";
+    buttons.forEach((button) => button.style.backgroundColor = "#155263");
+    themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "rgb(255, 100, 50");
+    technologies.forEach((technology) => technology.style.backgroundColor = "rgb(255, 100, 50)");
+    technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.backgroundColor = "#155263");
+    technologies.forEach((technology) => technology.style.border= "1px solid #ff3800");
+    technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.border = "1px solid #ff3800");
+    navHover.forEach((hover) => hover.style.backgroundColor = "#ff3800");
+    h3s.forEach((h3) => h3.style.color = "#155263");
+    labels.forEach((label) => label.style.backgroundColor = "rgb(255, 100, 50)");
+    send.style.backgroundColor = "#155263";
+    contactIcon.forEach((icon) => icon.style.color = "#155263");
+
+    function bright() {
+      const navHover = document.querySelectorAll(".nav2 div");
+    
+      navHover.forEach((hover) => hover.style.backgroundColor = "#ff3800");
+    }
+     return bright(); 
+  }
 function themeBrown() {
     const nav = document.querySelector(".nav");
     const nav2 = document.querySelector(".nav2");
 	const main = document.querySelector("main");
 	const span = document.querySelector("span");
-	const msgDelivered = document.querySelector(".msgDelivered");
-	const button = document.querySelectorAll("button");
+	const buttons = document.querySelectorAll(".button");
 	const send = document.querySelector(".send");
-	const html = document.querySelector("#html-level");
-	const css = document.querySelector("#css-level");
-	const tailwind = document.querySelector("#tailwind-level");
-	const react = document.querySelector("#react-level");
-	const express = document.querySelector("#express-level");
-    const themeDiv = document.querySelectorAll(".home-column");
-    const icon = document.querySelector(".fa");
-	const link = document.querySelector("a");
-	const socialMedia = document.querySelector("#social-media-handles");
+	const technologies = document.querySelectorAll("#html-level, #css-level, #react-level, #express-level, #tailwind-level");
+	const technologyPercentages = document.querySelectorAll("#html-percentage, #css-percentage, #react-percentage, #express-percentage, #tailwind-percentage");
+  const navHover = document.querySelectorAll(".nav2 div.home-home");
+  const themeDivs = document.querySelectorAll(".home-column");
+	const h3s = document.querySelectorAll(".center h3");
+	const labels = document.querySelectorAll(".label input");
+  const contactIcon = document.querySelectorAll(".fa-5x");
 	
+
     nav.style.backgroundColor = "#d9b650";
     nav2.style.backgroundColor = "#d9b650";
-    //themeDiv.style.backgroundColor = "#ca9e1a";
     main.style.backgroundColor = "#83580b";
-    span.style.color = "#ff3800";
-    button.style.backgroundColor = "#ff3800";
-    msgDelivered.style.color = "#ff3800";
-    html.style.border = "#ff3800";
-    html.style.border = "#ff3800";
-    css.style.border = "#ff3800";
-    css.style.border = "#ff3800";
-    tailwind.style.border = "#ff3800";
-    tailwind.style.border = "#ff3800";
-    react.style.border = "#ff3800";
-    react.style.border = "#ff3800";
-    express.style.border = "#ff3800";
-    express.style.border = "#ff3800";
-    send.style.color = "#ff3800";
-  }
-   /*icon.style.color = "#ff3800";span, .msgDelivered {
-    /*icon.style.color = "#ff3800";span, .msgDelivered {
-        color: #00C7FF;
-       .button {
-         background-color: #00C7FF;
-         color: white;
-       }
-       
-    link.style.color = "#ff3800";
-    body.style.color = "#ff3800";
-    verticalLine.style.border = "1px solid #ff3800";
-    hr1.style.border = "1px solid #ff3800";
-    hr2.style.border = "1px solid #ff3800";
-    socialMedia.style.color = "#ff3800";
-    *//*.nav {
-        background-color: rgba(255, 56, 0, 0.7);;
-      } 
-      main {
-        background-color: #ff3800;
-      }*/
-/*
+    buttons.forEach((button) => button.style.backgroundColor = "#00C7FF");
+    themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#ca9e1a");
+    technologies.forEach((technology) => technology.style.backgroundColor = "#d9b650");
+    technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.backgroundColor = "#00C7FF");
+    technologies.forEach((technology) => technology.style.border= "1px solid #807664");
+    technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.border = "1px solid #83580b");
+    navHover.forEach((hover) => hover.style.backgroundColor = "#83580b");
+    span.style.color = "#00C7FF";
+    h3s.forEach((h3) => h3.style.color = "#00C7FF");
+    labels.forEach((label) => label.style.backgroundColor = "#d9b650");
+    send.style.backgroundColor = "#155263";
+    contactIcon.forEach((icon) => icon.style.color = "#00C7FF");
 
-      span, .msgDelivered {
-        color: #00C7FF;
-       }
-       .button {
-         background-color: #00C7FF;
-         color: white;
-       }
-    
-#social-media-handles * {
-    color: white;
-  }
-
-  #click-here {
-    color: white;
-  }
-  #html-level, #css-level, #tailwind-level, #react-level, #express-level {
-    border: 1px solid rgba(255, 0, 0, 0.5);
-    background-color: rgb(255, 100, 50);
-  }
-  #html-percentage, #css-percentage, #tailwind-percentage, #react-percentage, #express-percentage {
-    border: 1px solid #ff3800;
-    background-color: #00C7FF;
-  }.center h3 {
-    color: #00C7FF;
-  }
-  .label input {
-    background-color: rgb(255, 100, 50);
-  }
-  .send {
-    background-color: #00C7FF;
-    color: white;
-  }
-  .nav2 div:hover, .home-home {
-    background-color: #ff3800;
-  }*/
-
-
+    function bright() {
+      const themeDivs = document.querySelectorAll(".nav2 div.home-home");
+  
+      themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#552e5a");
+    }
+   }
+   
 function themeBlue() {
-    const nav = document.querySelector(".nav");
-    const nav2 = document.querySelector(".nav2");
-	const main = document.querySelector("main");
-	const body = document.querySelector("body");
-	const verticalLine = document.querySelector("#vertical-line");
-	const hr1 = document.querySelector("#hr-1");
-	const hr2 = document.querySelector("#hr-2");
-	const span = document.querySelector("span");
-	const msgDelivered = document.querySelector(".msgDelivered");
-	const button = document.querySelectorAll("button");
-	const send = document.querySelector(".send");
-	
+  const nav = document.querySelector(".nav");
+  const nav2 = document.querySelector(".nav2");
+const main = document.querySelector("main");
+const span = document.querySelector("span");
+const buttons = document.querySelectorAll(".button");
+const send = document.querySelector(".send");
+const technologies = document.querySelectorAll("#html-level, #css-level, #react-level, #express-level, #tailwind-level");
+const technologyPercentages = document.querySelectorAll("#html-percentage, #css-percentage, #react-percentage, #express-percentage, #tailwind-percentage");
+const navHover = document.querySelectorAll(".nav2 div.home-home");
+const contactIcon = document.querySelectorAll(".fa-5x");
+const themeDivs = document.querySelectorAll(".home-column");
+const h3s = document.querySelectorAll(".center h3");
+const labels = document.querySelectorAll(".label input");
+
     nav.style.backgroundColor = "#49beb7";
     nav2.style.backgroundColor = "#49beb7";
     main.style.backgroundColor = "#085f63";
+    themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#688d8b");
+    technologies.forEach((technology) => technology.style.backgroundColor = "#49beb7");
+    technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.backgroundColor = "#ff3800");
+    technologies.forEach((technology) => technology.style.border= "1px solid #085f63");
+    technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.border = "1px solid #085f63");
+    h3s.forEach((h3) => h3.style.color = "#ff3800");
     span.style.color = "#ff3800";
-    button.style.backgroundColor = "#ff3800";
-    msgDelivered.style.color = "#ff3800";
-    send.style.color = "#ff3800";
+    buttons.forEach((button) => button.style.backgroundColor = "#ff3800");
+    send.style.backgroundColor = "#ff3800";
+    labels.forEach((label) => label.style.backgroundColor = "#688d8b");
+    navHover.forEach((hover) => hover.style.backgroundColor = "#085f63");
+    contactIcon.forEach((icon) => icon.style.color = "#ff3800");
 
-    const icon = document.querySelector(".fa");
-	const link = document.querySelector("a");
-	const socialMedia = document.querySelector("#social-media-handles");
-}
+    function bright() {
+      const themeDivs = document.querySelectorAll(".nav2 div.home-home");
+  
+      themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#552e5a");
+    }
+  
+  }
 function themePurple() {
-    const nav = document.querySelector(".nav");
-    const nav2 = document.querySelector(".nav2");
-	const main = document.querySelector("main");
-	const body = document.querySelector("body");
-	const verticalLine = document.querySelector("#vertical-line");
-	const hr1 = document.querySelector("#hr-1");
-	const hr2 = document.querySelector("#hr-2");
-	const span = document.querySelector("span");
-	const msgDelivered = document.querySelector(".msgDelivered");
-	const button = document.querySelectorAll("button");
-	const send = document.querySelector(".send");
-	
-    nav.style.backgroundColor = "#cf7979";
-    nav2.style.backgroundColor = "#cf7979";
-    main.style.backgroundColor = "#552e5a";
-    span.style.color = "#ff3800";
-    button.style.backgroundColor = "#ff3800";
-    msgDelivered.style.color = "#ff3800";
-    send.style.color = "#ff3800";
+  const nav = document.querySelector(".nav");
+  const nav2 = document.querySelector(".nav2");
+const main = document.querySelector("main");
+const span = document.querySelector("span");
+const buttons = document.querySelectorAll(".button");
+const send = document.querySelector(".send");
+const technologies = document.querySelectorAll("#html-level, #css-level, #react-level, #express-level, #tailwind-level");
+const technologyPercentages = document.querySelectorAll("#html-percentage, #css-percentage, #react-percentage, #express-percentage, #tailwind-percentage");
+const navHover = document.querySelectorAll(".nav2 div.home-home");
+const contactIcon = document.querySelectorAll(".fa-5x");
+const themeDivs = document.querySelectorAll(".home-column");
+const h3s = document.querySelectorAll(".center h3");
+const labels = document.querySelectorAll(".label input");
 
-    const icon = document.querySelector(".fa");
-	const link = document.querySelector("a");
-	const socialMedia = document.querySelector("#social-media-handles");
+
+  nav.style.backgroundColor = "#cf7979";
+  nav2.style.backgroundColor = "#cf7979";
+  main.style.backgroundColor = "#552e5a";
+  themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#8b5e5e");
+  technologies.forEach((technology) => technology.style.backgroundColor = "#cf7979");
+  technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.backgroundColor = "#ff3800");
+  technologies.forEach((technology) => technology.style.border= "1px solid #552e5a");
+  technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.border = "1px solid #552e5a");
+  h3s.forEach((h3) => h3.style.color = "#0962ea");
+  span.style.color = "#0962ea";
+  buttons.forEach((button) => button.style.backgroundColor = "#0962ea");
+  send.style.backgroundColor = "#0962ea";
+  labels.forEach((label) => label.style.backgroundColor = "#cf7979");
+  navHover.forEach((hover) => hover.style.backgroundColor = "#552e5a");
+  contactIcon.forEach((icon) => icon.style.color = "#0962ea");
+  
+  function bright() {
+    const themeDivs = document.querySelectorAll(".nav2 div.home-home");
+
+    themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#552e5a");
+  }
+
 }

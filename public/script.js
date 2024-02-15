@@ -3,7 +3,6 @@
    const scriptURL = 'https://script.google.com/macros/s/AKfycbweO9bIkKpG_4we13g1uFOPrdcJgrriZJwdnB6CwW0pYlM7Atm73oKrrrXJHM0dxXRi3w/exec'
    const submitButton = document.querySelector("#submit")
    const Message = document.getElementById("msgDelivered")
-
     form.addEventListener('submit', e => {
         submitButton.disabled = true
         e.preventDefault()
@@ -79,8 +78,8 @@ function themeClose() {
 }  
 function themeRed() {
   
-  const nav = document.querySelector(".nav");
-  const nav2 = document.querySelector(".nav2");
+const nav = document.querySelector(".nav");
+const nav2 = document.querySelector(".nav2");
 const main = document.querySelector("main");
 const span = document.querySelector("span");
 const buttons = document.querySelectorAll(".button");
@@ -88,7 +87,7 @@ const send = document.querySelector(".send");
 const technologies = document.querySelectorAll("#html-level, #css-level, #react-level, #express-level, #tailwind-level");
 const technologyPercentages = document.querySelectorAll("#html-percentage, #css-percentage, #react-percentage, #express-percentage, #tailwind-percentage");
 const navHover = document.querySelectorAll(".nav2 div.home-home");
-  const themeDivs = document.querySelectorAll(".home-column");
+const themeDivs = document.querySelectorAll(".home-column");
 const h3s = document.querySelectorAll(".center h3");
 const labels = document.querySelectorAll(".label input");
 const contactIcon = document.querySelectorAll(".fa-5x");
@@ -109,12 +108,12 @@ const contactIcon = document.querySelectorAll(".fa-5x");
     send.style.backgroundColor = "#155263";
     contactIcon.forEach((icon) => icon.style.color = "#155263");
 
-    function bright() {
+/*    function bright() {
       const navHover = document.querySelectorAll(".nav2 div");
     
       navHover.forEach((hover) => hover.style.backgroundColor = "#ff3800");
     }
-     return bright(); 
+     return bright(); */
   }
 function themeBrown() {
     const nav = document.querySelector(".nav");
@@ -142,17 +141,17 @@ function themeBrown() {
     technologies.forEach((technology) => technology.style.border= "1px solid #807664");
     technologyPercentages.forEach((technologyPercentage) => technologyPercentage.style.border = "1px solid #83580b");
     navHover.forEach((hover) => hover.style.backgroundColor = "#83580b");
-    span.style.color = "#00C7FF";
+   span.style.color = "#00C7FF";
     h3s.forEach((h3) => h3.style.color = "#00C7FF");
     labels.forEach((label) => label.style.backgroundColor = "#d9b650");
     send.style.backgroundColor = "#155263";
     contactIcon.forEach((icon) => icon.style.color = "#00C7FF");
 
-    function bright() {
+   /* function bright() {
       const themeDivs = document.querySelectorAll(".nav2 div.home-home");
   
       themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#552e5a");
-    }
+    }*/
    }
    
 function themeBlue() {
@@ -186,11 +185,11 @@ const labels = document.querySelectorAll(".label input");
     navHover.forEach((hover) => hover.style.backgroundColor = "#085f63");
     contactIcon.forEach((icon) => icon.style.color = "#ff3800");
 
-    function bright() {
+    /*function bright() {
       const themeDivs = document.querySelectorAll(".nav2 div.home-home");
   
       themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#552e5a");
-    }
+    }*/
   
   }
 function themePurple() {
@@ -225,10 +224,10 @@ const labels = document.querySelectorAll(".label input");
   navHover.forEach((hover) => hover.style.backgroundColor = "#552e5a");
   contactIcon.forEach((icon) => icon.style.color = "#0962ea");
   
-  function bright() {
+  /*function bright() {
     const themeDivs = document.querySelectorAll(".nav2 div.home-home");
 
     themeDivs.forEach((themeDiv) => themeDiv.style.backgroundColor = "#552e5a");
   }
-
+*/
 }

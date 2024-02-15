@@ -804,7 +804,7 @@ div.center {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
+    position: absolute;
     top: 100%;
     width: 100%;
     padding-top: 21px;
@@ -891,4 +891,10 @@ div.center {
   .flex-contact {
     padding: 0px;
   }
+}
+@media screen and (max-width:345px) {
+ 
+  .layer {
+    bottom: 22.5%;
+  } 
 }
